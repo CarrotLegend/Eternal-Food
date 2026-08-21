@@ -1,8 +1,11 @@
 {
+  "creativetab.eternal_food": "永恒食物",
+  "config.jade.plugin_eternal_food.mineral_gel_growth": "矿物凝胶生长进度",
   "item.eternal_food.nirvana_cookie": "涅槃曲奇",
   "item.eternal_food.phoenix_feather": "凤凰翎",
+  "block.eternal_food.mineral_gel": "矿物凝胶",
   "effect.eternal_food.nirvana": "涅槃",
-  "tooltip.eternal_food.phoenix_feather.rebirth": "死亡后，你会重生。",
-  "tooltip.eternal_food.phoenix_feather.cooldown": "效果有2分钟冷却。"
+  "effect.eternal_food.mineral_scent": "矿物嗅觉",
+  "tooltip.eternal_food.phoenix_feather.rebirth": "§6死亡后，你会重生。",
+  "tooltip.eternal_food.phoenix_feather.cooldown": "§6效果有2分钟冷却。"
 }
-

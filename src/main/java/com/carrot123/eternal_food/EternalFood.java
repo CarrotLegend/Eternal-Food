@@ -1,6 +1,9 @@
 package com.carrot123.eternal_food;
 
+import com.carrot123.eternal_food.config.EternalFoodClientConfig;
 import com.carrot123.eternal_food.network.ModNetworking;
+import com.carrot123.eternal_food.registry.ModBlocks;
+import com.carrot123.eternal_food.registry.ModCreativeTabs;
 import com.carrot123.eternal_food.registry.ModEffects;
 import com.carrot123.eternal_food.registry.ModItems;
 import com.mojang.logging.LogUtils;
@@ -17,7 +20,10 @@ public final class EternalFood {
 
     public EternalFood(FMLJavaModLoadingContext context) {
         IEventBus modEventBus = context.getModEventBus();
+        EternalFoodClientConfig.register(context);
+        ModBlocks.BLOCKS.register(modEventBus);
         ModItems.ITEMS.register(modEventBus);
+        ModCreativeTabs.CREATIVE_MODE_TABS.register(modEventBus);
         ModEffects.EFFECTS.register(modEventBus);
         modEventBus.addListener(this::commonSetup);
     }
@@ -26,4 +32,3 @@ public final class EternalFood {
         event.enqueueWork(ModNetworking::register);
     }
 }
-

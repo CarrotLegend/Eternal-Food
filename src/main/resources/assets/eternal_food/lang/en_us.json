@@ -1,8 +1,11 @@
 {
+  "creativetab.eternal_food": "Eternal Food",
+  "config.jade.plugin_eternal_food.mineral_gel_growth": "Mineral Gel Growth",
   "item.eternal_food.nirvana_cookie": "Nirvana Cookie",
   "item.eternal_food.phoenix_feather": "Phoenix Feather",
+  "block.eternal_food.mineral_gel": "Mineral Gel",
   "effect.eternal_food.nirvana": "Nirvana",
-  "tooltip.eternal_food.phoenix_feather.rebirth": "After death, you will be reborn.",
-  "tooltip.eternal_food.phoenix_feather.cooldown": "This effect has a 2-minute cooldown."
+  "effect.eternal_food.mineral_scent": "Mineral Scent",
+  "tooltip.eternal_food.phoenix_feather.rebirth": "§6After death, you will be reborn.",
+  "tooltip.eternal_food.phoenix_feather.cooldown": "§6This effect has a 2-minute cooldown."
 }
-

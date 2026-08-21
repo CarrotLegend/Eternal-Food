@@ -1,0 +1,8 @@
+{
+  "parent": "eternal_food:block/template_mineral_gel_face",
+  "textures": {
+    "particle": "eternal_food:block/mineral_gel_stage_0",
+    "base": "eternal_food:block/mineral_gel_stage_0",
+    "overlay": "eternal_food:block/mineral_gel_stage_0_glow"
+  }
+}

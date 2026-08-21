@@ -2,7 +2,9 @@ package com.carrot123.eternal_food.registry;
 
 import com.carrot123.eternal_food.EternalFood;
 import com.carrot123.eternal_food.item.NirvanaCookieItem;
+import com.carrot123.eternal_food.item.MineralGelBlockItem;
 import com.carrot123.eternal_food.item.PhoenixFeatherItem;
+import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.food.Foods;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Rarity;
@@ -27,7 +29,16 @@ public final class ModItems {
             PhoenixFeatherItem::new
     );
 
+    public static final RegistryObject<Item> MINERAL_GEL = ITEMS.register(
+            "mineral_gel",
+            () -> new MineralGelBlockItem(
+                    ModBlocks.MINERAL_GEL.get(),
+                    new Item.Properties().food(new FoodProperties.Builder()
+                            .nutrition(1)
+                            .saturationMod(1.0F)
+                            .build()))
+    );
+
     private ModItems() {
     }
 }
-

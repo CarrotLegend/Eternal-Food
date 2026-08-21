@@ -6,11 +6,11 @@ import com.carrot123.eternal_food.network.ModNetworking;
 import com.carrot123.eternal_food.network.PhoenixFeatherActivationS2CPacket;
 import com.carrot123.eternal_food.registry.ModEffects;
 import com.carrot123.eternal_food.registry.ModItems;
+
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundEvents;
-import net.minecraft.tags.DamageTypeTags;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.LivingEntity;
@@ -62,8 +62,7 @@ public final class RevivalHandler {
 
         player.getPersistentData().putBoolean(REVIVAL_IN_PROGRESS, true);
         try {
-            if (player.hasEffect(ModEffects.NIRVANA.get())
-                    && !event.getSource().is(DamageTypeTags.BYPASSES_INVULNERABILITY)) {
+            if (player.hasEffect(ModEffects.NIRVANA.get())) {
                 event.setCanceled(true);
                 reviveWithNirvana(player);
                 return;

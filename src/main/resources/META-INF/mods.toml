@@ -29,3 +29,10 @@ mandatory=true
 versionRange="[${curios_version}]"
 ordering="AFTER"
 side="BOTH"
+
+[[dependencies.${mod_id}]]
+modId="jade"
+mandatory=false
+versionRange="[11,12)"
+ordering="AFTER"
+side="CLIENT"
