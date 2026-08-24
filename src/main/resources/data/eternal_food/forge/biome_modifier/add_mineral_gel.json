@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#minecraft:is_overworld",
+  "features": "eternal_food:mineral_gel",
+  "step": "vegetal_decoration"
+}
